@@ -1,5 +1,4 @@
-package cn.cst.main;
-
+package cn.cst;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
