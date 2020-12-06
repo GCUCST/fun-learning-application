@@ -15,6 +15,7 @@
         <module>hello-pulsar</module>
         <module>hello-sftp</module>
         <module>hello-jdbc</module>
+        <module>hello-mongo</module>
     </modules>
 
 
