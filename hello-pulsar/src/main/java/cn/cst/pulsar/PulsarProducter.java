@@ -16,7 +16,5 @@ public class PulsarProducter {
         for (int i = 0; i < 100; i++) {
             producer.send(String.format("My message %s", i).getBytes());
         }
-
-
     }
 }
