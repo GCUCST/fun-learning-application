@@ -13,6 +13,7 @@
         <module>hello-maven</module>
         <module>hello-swagger</module>
         <module>hello-pulsar</module>
+        <module>hello-sftp</module>
     </modules>
 
 

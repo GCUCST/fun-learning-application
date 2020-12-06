@@ -1,0 +1,1 @@
+docker run --name mysftp2222 -v /e/sftp-file:/home/foo/sftp-file --privileged=true -p 2222:22 -d atmoz/sftp foo:pass:1001
