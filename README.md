@@ -1,4 +1,7 @@
+# 读我
 #### fun-learning-application
+#### 本项目用于学习，部分代码来源各大网站，侵删
+
 This repository summaries some tools'usage with a small demo and text detail.
 
 #### commands

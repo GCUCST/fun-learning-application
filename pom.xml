@@ -11,11 +11,12 @@
     <modules>
         <module>hello-world</module>
         <module>hello-maven</module>
-        <module>hello-swagger</module>
+        <module>hello-spring-security</module>
         <module>hello-pulsar</module>
         <module>hello-sftp</module>
         <module>hello-jdbc</module>
         <module>hello-mongo</module>
+        <module>hello-springboot</module>
     </modules>
 
     <dependencies>
