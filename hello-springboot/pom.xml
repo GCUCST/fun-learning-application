@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cn.cst</groupId>
-    <artifactId>my-springboot</artifactId>
+    <artifactId>hello-springboot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>my-springboot</name>
+    <name>hello-springboot</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
