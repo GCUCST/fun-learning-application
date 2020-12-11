@@ -17,6 +17,7 @@
         <module>hello-jdbc</module>
         <module>hello-mongo</module>
         <module>hello-springboot</module>
+        <module>chufeng-redis</module>
     </modules>
 
     <dependencies>
