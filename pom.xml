@@ -18,6 +18,7 @@
         <module>hello-mongo</module>
         <module>hello-springboot</module>
         <module>chufeng-redis</module>
+        <module>spring-security-jwt</module>
     </modules>
 
     <dependencies>
