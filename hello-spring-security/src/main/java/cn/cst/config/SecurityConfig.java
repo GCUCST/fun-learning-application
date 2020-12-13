@@ -39,12 +39,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     //相关信息，拦截规则
 //    @Override
 //    protected void configure(HttpSecurity http) throws Exception {
+//        http.rememberMe();
+//        http.csrf().disable();
+////        http.formLogin().loginPage("/my-login-page").loginProcessingUrl(); //定制登录页面
+//        http.formLogin();
+//        http.logout().logoutSuccessUrl("http://www.baidu.com");
 //        http
 //                .authorizeRequests()
-//                .anyRequest().authenticated()
-//                .and()
-//                .formLogin().and()
-//                .httpBasic();
+//                .antMatchers("/get/guest").permitAll() // 匹配到就放行
+//                .antMatchers("/get/admin").hasAnyRole("admin");
 //    }
 
 
