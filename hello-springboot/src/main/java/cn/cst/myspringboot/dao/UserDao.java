@@ -7,7 +7,7 @@ import java.util.List;
 
 @Component
 public interface UserDao {
-     Boolean saveUser(User user);
+    Boolean saveUser(User user);
 
      Integer updateUserPassword(User user);
 
