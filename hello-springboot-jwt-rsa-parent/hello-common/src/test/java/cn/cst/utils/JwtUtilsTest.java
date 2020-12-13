@@ -1,7 +1,6 @@
 package cn.cst.utils;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
 import java.security.PrivateKey;
@@ -15,12 +14,11 @@ class JwtUtilsTest {
             "hello-springboot-jwt-rsa-parent\\hello-common\\src\\test\\resources\\id_key_rsa.pub";
 
     @Test
-    @Order(10)
     void generateTokenExpireInMinutes() throws Exception {
         PrivateKey privateKey = RsaUtils.getPrivateKey(privateFilePath); //私钥加密
         PublicKey publicKey = RsaUtils.getPublicKey(publicFilePath); //公钥解密
 
-        User chen_shaotong = User.builder().username("chen shaotong").age("34").build();
+        User chen_shaotong = User.builder().username("CST").age("34").build();
         String token = JwtUtils.generateTokenExpireInSeconds(chen_shaotong, privateKey, 5);
         System.out.println(token);
 
@@ -31,17 +29,7 @@ class JwtUtilsTest {
                 System.out.println(fromToken);
             }
         });
-
-
     }
 
 
-    @Test
-    @Order(20)
-    void getInfoFromToken() {
-    }
-
-    @Test
-    void testGetInfoFromToken() {
-    }
 }
