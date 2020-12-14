@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>hello-auth_server</artifactId>
+    <artifactId>hello-auth-server</artifactId>
 
 
     <dependencies>
