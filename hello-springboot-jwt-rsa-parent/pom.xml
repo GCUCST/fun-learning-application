@@ -13,7 +13,7 @@
     <artifactId>hello-springboot-jwt-rsa-parent</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>hello-common</module>
+        <module>hello-auth-common</module>
         <module>hello-auth-server</module>
     </modules>
 

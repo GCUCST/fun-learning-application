@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>cn.chenshaotong</groupId>
-    <artifactId>hello-common</artifactId>
+    <artifactId>hello-auth-common</artifactId>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
