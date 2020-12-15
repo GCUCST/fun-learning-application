@@ -20,7 +20,7 @@
         </dependency>
         <dependency>
             <groupId>cn.chenshaotong</groupId>
-            <artifactId>hello-common</artifactId>
+            <artifactId>hello-auth-common</artifactId>
             <version>2.2.1.RELEASE</version>
         </dependency>
         <dependency>

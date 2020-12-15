@@ -11,10 +11,6 @@ import java.security.PublicKey;
 import java.util.Base64;
 import java.util.UUID;
 
-/**
- * @author: 黑马程序员
- * 生成token以及校验token相关方法
- */
 public class JwtUtils {
 
     private static final String JWT_PAYLOAD_USER_KEY = "user";
