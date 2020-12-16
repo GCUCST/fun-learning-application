@@ -18,6 +18,7 @@
         <module>hello-springboot</module>
         <module>chufeng-redis</module>
         <module>hello-springboot-jwt-rsa-parent</module>
+        <module>hello-spring-security-oauth</module>
     </modules>
 
     <dependencies>
