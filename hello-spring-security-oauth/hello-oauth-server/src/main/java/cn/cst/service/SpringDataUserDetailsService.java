@@ -35,7 +35,7 @@ public class SpringDataUserDetailsService implements UserDetailsService {
 //        permissions.toArray(permissionArray);
 //        //将userDto转成json
 //        String principal = JSON.toJSONString(userDto);
-            UserDetails userDetails = User.withUsername("lisi").password(new BCryptPasswordEncoder().encode("123")).authorities("ROLE_ADMIN").build();
+            UserDetails userDetails = User.withUsername("lisi").password(new BCryptPasswordEncoder().encode("123")).authorities("p1").build();
             return userDetails;
         } else return null;
     }
