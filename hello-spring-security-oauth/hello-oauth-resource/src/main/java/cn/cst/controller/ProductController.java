@@ -23,5 +23,13 @@ public class ProductController {
         return "访问资源1";
     }
 
+    @GetMapping(value = "/re")
+    @PreAuthorize("hasAuthority('p1')")//拥有p1权限方可访问此url
+    public String r2() {
+        //获取用户身份信息
+//        UserDTO  userDTO = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        throw new IllegalArgumentException("this is a illegal exception.");
+    }
+
 
 }
