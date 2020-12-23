@@ -12,6 +12,6 @@ import java.time.LocalTime;
 public class CommonResponse {
     private Integer code;
     private String msg;
-    private Object playload;
+    private Object payload;
     private LocalTime time;
 }
