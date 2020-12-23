@@ -1,16 +1,14 @@
 package cn.cst;
 
-import lombok.*;
-
 import java.io.Serializable;
+import lombok.*;
 
 @Builder
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-
 public class User implements Serializable {
-    String name;
-    Integer age;
+  String name;
+  Integer age;
 }
