@@ -26,5 +26,19 @@
         </dependency>
     </dependencies>
 
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>cn.cf</groupId>
+                <artifactId>cf-maven-plugin</artifactId>
+                <version>1.0</version>
+               <executions>
+                   <execution>
+                      <phase>compile</phase>
+                       <goals><goal>hello</goal></goals>
+                   </execution>
+               </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
