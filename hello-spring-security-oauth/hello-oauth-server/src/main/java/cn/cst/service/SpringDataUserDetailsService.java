@@ -20,7 +20,7 @@ public class SpringDataUserDetailsService implements UserDetailsService {
     //根据 账号查询用户信息
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-
+// username用于查数据库，password用于它内部比对
         if (username.equals("lisi")) {
 //        //将来连接数据库根据账号查询用户信息
 //        UserDto userDto = userDao.getUserByUsername(username);
@@ -35,7 +35,7 @@ public class SpringDataUserDetailsService implements UserDetailsService {
 //        permissions.toArray(permissionArray);
 //        //将userDto转成json
 //        String principal = JSON.toJSONString(userDto);
-            UserDetails userDetails = User.withUsername("lisi").password(new BCryptPasswordEncoder().encode("123")).authorities("p1").build();
+            UserDetails userDetails = User.withUsername("lisi_xiugai").password(new BCryptPasswordEncoder().encode("123")).authorities("p1").build();
             return userDetails;
         } else return null;
     }

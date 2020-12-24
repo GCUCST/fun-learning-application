@@ -63,10 +63,10 @@ public class UserController {
     }
 
     @ApiOperation(value = "获取用户信息", tags = {"获取用户信息——单独"}, notes = "实现笔记") //单独
-    @GetMapping("/getUser1")
-    @ApiImplicitParams({
-            @ApiImplicitParam(name = "username", value = "用户名称", dataType = "String", paramType = "query")})
-    public User getUserInfo(@ApiParam(name = "username", value = "用户名", required = true, example = "老王") @PathParam("username") String username) {
+    @GetMapping("/getUserWithSingle")
+//    @ApiImplicitParams({
+//            @ApiImplicitParam(name = "username", value = "用户名称", dataType = "String", paramType = "query")})
+    public User getUserInfo(@ApiParam(name = "username", value = "用户名11111", required = true, example = "老王") String username) {
         User user = new User();
         return user;
     }
