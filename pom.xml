@@ -18,7 +18,7 @@
         <module>hello-springboot</module>
         <module>chufeng-redis</module>
         <module>hello-springboot-jwt-rsa-parent</module>
-        <module>hello-spring-security-oauth</module>
+<!--        <module>hello-spring-security-oauth</module>-->
         <module>hello-git</module>
     </modules>
 
@@ -72,7 +72,7 @@
                 <executions>
                     <execution>
                         <id>check</id>
-                        <phase>test</phase>
+                        <phase>install</phase>
                         <goals>
                             <goal>check</goal>
                         </goals>

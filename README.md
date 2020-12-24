@@ -39,3 +39,5 @@ mvn site
 
 #https://www.runoob.com/maven/maven-build-test-project.html
 
+#如果出现 执行 goal fmt失败
+可以修复：mvn com.coveo:fmt-maven-plugin:format

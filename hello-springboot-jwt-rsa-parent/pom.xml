@@ -14,7 +14,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>hello-auth-common</module>
-        <module>hello-auth-server</module>
     </modules>
 
     <dependencies>
