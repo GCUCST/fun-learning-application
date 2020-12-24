@@ -19,6 +19,7 @@
         <module>chufeng-redis</module>
         <module>hello-springboot-jwt-rsa-parent</module>
         <module>hello-spring-security-oauth</module>
+        <module>hello-git</module>
     </modules>
 
     <dependencies>
