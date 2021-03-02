@@ -26,6 +26,7 @@
         <module>hello-git</module>
         <module>chufeng-redis</module>
         <module>chufeng-maven-plugin</module>
+        <module>internet-worm</module>
     </modules>
 
     <dependencies>
