@@ -59,4 +59,15 @@
     </dependencies>
 
 
+    <!--   打包为jar包，生成主清单属性 url:https://blog.csdn.net/u010429286/article/details/79085212-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+
 </project>
