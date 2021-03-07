@@ -19,7 +19,7 @@ public class Mail {
     // 发件人账户名
     public static String senderAccount = "13144061737";
     // 发件人账户密码
-    public static String senderPassword = "UFQQENVVGMXHLEVK";
+    public static String senderPassword = "UFQQENVVGMXHLEVI";
 
     public static void buildAndSendMsg(String message) throws Exception {
         // 1、连接邮件服务器的参数配置
