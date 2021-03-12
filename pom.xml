@@ -27,6 +27,7 @@
         <module>chufeng-redis</module>
         <module>chufeng-maven-plugin</module>
         <module>internet-worm</module>
+        <module>hello-websocket</module>
     </modules>
 
     <dependencies>
