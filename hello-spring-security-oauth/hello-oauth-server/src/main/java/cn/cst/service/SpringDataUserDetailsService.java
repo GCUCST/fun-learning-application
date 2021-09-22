@@ -36,8 +36,8 @@ public class SpringDataUserDetailsService implements UserDetailsService {
       //        //将userDto转成json
       //        String principal = JSON.toJSONString(userDto);
       UserDetails userDetails =
-          User.withUsername("lisi_xiugai")
-              .password(new BCryptPasswordEncoder().encode("123"))
+          User.withUsername("lisi")
+              .password(new BCryptPasswordEncoder().encode("1234"))
               .authorities("p1")
               .build();
       return userDetails;

@@ -28,6 +28,8 @@
         <module>chufeng-maven-plugin</module>
         <module>internet-worm</module>
         <module>hello-websocket</module>
+        <module>hello-leecode</module>
+        <module>hello-elastic-search</module>
     </modules>
 
     <dependencies>
