@@ -18,7 +18,7 @@ class MySpringbootApplicationTests {
         for (int i = 0; i < 100; i++) {
             Course course = new Course();
             course.setCname("CST"+i);
-            course.setUserId(100L);
+            course.setUserId(100L+i);
             course.setCstatus("OK");
             courseMapper.insert(course);
         }
