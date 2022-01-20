@@ -13,8 +13,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
-    @ApiModelProperty(value = "用户名", name = "username", example = "Shaotong Chen")
-    private String username;
-    @ApiModelProperty(value = "密码", name = "username", example = "123456")
-    private String password;
+  @ApiModelProperty(value = "用户名", name = "username", example = "Shaotong Chen")
+  private String username;
+
+  @ApiModelProperty(value = "密码", name = "username", example = "123456")
+  private String password;
 }

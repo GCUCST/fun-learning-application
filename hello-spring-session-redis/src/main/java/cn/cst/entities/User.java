@@ -1,9 +1,8 @@
 package cn.cst.entities;
 
+import java.io.Serializable;
 import lombok.*;
 import lombok.Data;
-
-import java.io.Serializable;
 
 @Data
 @Builder
@@ -11,6 +10,6 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 public class User implements Serializable {
-    public String name;
-    public String pass;
+  public String name;
+  public String pass;
 }

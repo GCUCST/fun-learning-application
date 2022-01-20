@@ -6,12 +6,12 @@ import org.springframework.security.core.GrantedAuthority;
 @Data
 public class SysRole implements GrantedAuthority {
 
-    private String id;
-    private String roleName;
-    private String desc;
+  private String id;
+  private String roleName;
+  private String desc;
 
-    @Override
-    public String getAuthority() {
-        return roleName;
-    }
+  @Override
+  public String getAuthority() {
+    return roleName;
+  }
 }

@@ -10,6 +10,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.List;
+
 @SpringBootTest
 class MySpringbootApplicationTests {
 
@@ -43,6 +45,24 @@ class MySpringbootApplicationTests {
             course.setCstatus("OK");
             courseMapper.insert(course);
         }
+    }
+
+    @Test
+    void dxfl() {
+        Course course = new Course();
+        course.setCname("dxfl" );
+        course.setUserId(100L);
+        course.setCstatus("OK");
+        courseMapper.insert(course);
+    }
+    @Test
+    void dxflGet() {
+        QueryWrapper wrapper = new QueryWrapper<Udict>();
+        wrapper.eq("cid","690882207660638209");
+
+        List<Course> courses = courseMapper.selectList(null);
+        System.out.println(courses);
+
     }
 
 }

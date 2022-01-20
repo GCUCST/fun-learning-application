@@ -8,8 +8,8 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
-    public String name;
-    public Integer age;
-    public String desc;
-    public String sex;
+  public String name;
+  public Integer age;
+  public String desc;
+  public String sex;
 }

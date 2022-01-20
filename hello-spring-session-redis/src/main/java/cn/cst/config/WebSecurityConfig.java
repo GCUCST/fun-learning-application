@@ -15,35 +15,38 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http
-                .authorizeRequests()
-//                .antMatchers("/hello", "/api/**")
-//                .access("hasRole('ROLE_ADMIN')")
-                .antMatchers("/", "/home").permitAll()
-                .anyRequest().authenticated()
+  @Override
+  protected void configure(HttpSecurity http) throws Exception {
+    http.authorizeRequests()
+        //                .antMatchers("/hello", "/api/**")
+        //                .access("hasRole('ROLE_ADMIN')")
+        .antMatchers("/", "/home")
+        .permitAll()
+        .anyRequest()
+        .authenticated()
+        .and()
+        .formLogin()
+        .loginPage("/login")
+        .permitAll()
+        .and()
+        .logout()
+        .permitAll();
+  }
 
-                .and()
-                .formLogin()
-                .loginPage("/login")
-                .permitAll()
+  @Bean
+  public PasswordEncoder getPasswordEncoder() {
+    return new BCryptPasswordEncoder();
+  }
 
-                .and()
-                .logout()
-                .permitAll();
-    }
-
-    @Bean
-    public PasswordEncoder getPasswordEncoder(){
-        return new BCryptPasswordEncoder();
-    }
-
-    @Autowired
-    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-        auth
-                .inMemoryAuthentication()
-                .withUser("user").password(getPasswordEncoder().encode("123")).roles("USER")
-                .and().withUser("user2").password(getPasswordEncoder().encode("123")).roles("ADMIN");
-    }
+  @Autowired
+  public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+    auth.inMemoryAuthentication()
+        .withUser("user")
+        .password(getPasswordEncoder().encode("123"))
+        .roles("USER")
+        .and()
+        .withUser("user2")
+        .password(getPasswordEncoder().encode("123"))
+        .roles("ADMIN");
+  }
 }
