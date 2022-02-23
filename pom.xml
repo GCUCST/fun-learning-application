@@ -32,6 +32,7 @@
         <module>hello-elastic-search</module>
         <module>hello-spring-session-redis</module>
         <module>hello-review</module>
+        <module>hello-mybatis</module>
     </modules>
 
     <dependencies>
@@ -84,7 +85,7 @@
                 <executions>
                     <execution>
                         <id>check</id>
-                        <phase>compile</phase>
+                        <phase>install</phase>
                         <goals>
                             <goal>check</goal>
                         </goals>
